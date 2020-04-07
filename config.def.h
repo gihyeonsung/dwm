@@ -8,8 +8,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int vertpad            = 10;       /* vertical padding of bar */
 static const int sidepad            = 10;       /* horizontal padding of bar */
-static const char *fonts[]          = { "Iosevka:size=12", "monospace:size=10" };
-static const char dmenufont[]       = "Iosevka:size=12";
+static const char *fonts[]          = { "NeoDunggeunmo:size=12", "monospace:size=10" };
+static const char dmenufont[]       = "NeoDunggeunmo:size=12";
 static const char col_gray1[]       = "#1c1c1c";
 static const char col_gray2[]       = "#1c1c1c";
 static const char col_gray3[]       = "#d0d0d0";

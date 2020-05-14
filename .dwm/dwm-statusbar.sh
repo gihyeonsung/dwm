@@ -6,7 +6,7 @@ datetime() {
 
 battery() {
 	capacity="$(cat /sys/class/power_supply/BAT0/capacity)"
-	if [[ $(cat /sys/class/power_supply/AC/online) -eq 0 ]]; then
+	if [ "$(cat /sys/class/power_supply/AC/online)" -eq 0 ]; then
     echo "$capacity% "
 	fi
 }

@@ -7,15 +7,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Iosevka:size=12", "monospace:size=10" };
 static const char dmenufont[]       = "Iosevka:size=12";
-static const char col_gray1[]       = "#1c1c1c";
-static const char col_gray2[]       = "#1c1c1c";
-static const char col_gray3[]       = "#d0d0d0";
-static const char col_gray4[]       = "#d0d0d0";
-static const char col_green[]       = "#56b88a";
+static const char col_fg[]       = "#fdf6e3";
+static const char col_bg[]       = "#657b83";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_green, col_green },
+	/*               fg      bg      border   */
+	[SchemeNorm] = { col_fg, col_bg, col_fg },
+	[SchemeSel]  = { col_bg, col_fg, col_fg },
 };
 
 /* tagging */
@@ -60,10 +57,10 @@ static const char *dmenucmd[] = {
     "dmenu_run",
     "-m", dmenumon,
     "-fn", dmenufont,
-    "-nb", col_gray1,
-    "-nf", col_gray3,
-    "-sb", col_green,
-    "-sf", col_gray4,
+    "-nb", col_bg,
+    "-nf", col_fg,
+    "-sb", col_fg,
+    "-sf", col_bg,
     NULL
 };
 static const char *termcmd[]  = { "st", NULL };

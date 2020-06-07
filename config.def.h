@@ -7,12 +7,13 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono-13" };
 static const char dmenufont[]       = "JetBrainsMono-13";
-static const char col_fg[]       = "#fdf6e3";
-static const char col_bg[]       = "#657b83";
+static const char col_bg[]  = "#282828";
+static const char col_fg[]  = "#d5c4a1";
+static const char col_sel[] = "#b8bb26";
 static const char *colors[][3]      = {
-	/*               fg      bg      border   */
-	[SchemeNorm] = { col_fg, col_bg, col_fg },
-	[SchemeSel]  = { col_bg, col_fg, col_fg },
+	/*               fg       bg      border   */
+	[SchemeNorm] = { col_fg,  col_bg, col_fg },
+	[SchemeSel]  = { col_sel, col_bg, col_fg },
 };
 
 /* tagging */
@@ -59,8 +60,8 @@ static const char *dmenucmd[] = {
     "-fn", dmenufont,
     "-nb", col_bg,
     "-nf", col_fg,
-    "-sb", col_fg,
-    "-sf", col_bg,
+    "-sb", col_bg,
+    "-sf", col_sel,
     NULL
 };
 static const char *termcmd[]  = { "st", NULL };

@@ -2153,7 +2153,7 @@ main(int argc, char *argv[])
 		die("pledge");
 #endif /* __OpenBSD__ */
 	scan();
-  system("dwm-bar &");
+  system("statusbar run &");
 	run();
 	cleanup();
 	XCloseDisplay(dpy);

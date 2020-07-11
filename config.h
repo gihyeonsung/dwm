@@ -7,9 +7,9 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Gohu GohuFont:pixelsize=14" };
 static const char dmenufont[]       = "Gohu GohuFont:pixelsize=14";
-static const char col_bg[]  = "#282828";
-static const char col_fg[]  = "#d5c4a1";
-static const char col_sel[] = "#b8bb26";
+static const char col_bg[]          = "#282828";
+static const char col_fg[]          = "#d5c4a1";
+static const char col_sel[]         = "#b8bb26";
 static const char *colors[][3]      = {
 	/*               fg       bg      border   */
 	[SchemeNorm] = { col_fg,  col_bg, col_fg },

@@ -8,8 +8,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=13" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=13";
 static const char col_bg[]          = "#282828";
-static const char col_fg[]          = "#d5c4a1";
-static const char col_sel[]         = "#b8bb26";
+static const char col_fg[]          = "#ebdbb2";
+static const char col_sel[]         = "#d3869b";
 static const char *colors[][3]      = {
 	/*               fg       bg      border   */
 	[SchemeNorm] = { col_fg,  col_bg, col_fg },
